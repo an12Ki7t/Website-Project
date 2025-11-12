@@ -1,3 +1,28 @@
+// ===== Navbar Active Link Highlight =====
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPage = window.location.pathname.split("/").pop(); // get current file name
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href").split("/").pop();
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
+
+// ===== Mobile Menu Toggle =====
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+  hamburger.classList.toggle("active");
+});
+
+// ===== Footer Year =====
+document.getElementById("year").textContent = new Date().getFullYear();
+
 // Footer year auto-update
 document.getElementById("year").textContent = new Date().getFullYear();
 

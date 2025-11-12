@@ -53,7 +53,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover ,
+.nav-links li a.active{
   color: #FFD700;
 }
 /* ===== Hero Section (Optimized & Responsive) ===== */

@@ -1,28 +1,32 @@
+
 // ===== Carousel Functionality =====
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll(".slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const dotsContainer = document.querySelector(".dots");
+
 let currentIndex = 0;
+let autoSlideInterval;
 
-// Create dot indicators
-const dotsContainer = document.createElement('div');
-dotsContainer.classList.add('dots');
-document.querySelector('.carousel').appendChild(dotsContainer);
-
+// Create dot indicators dynamically
 slides.forEach((_, i) => {
-  const dot = document.createElement('span');
-  dot.classList.add('dot');
-  if (i === 0) dot.classList.add('active');
-  dot.addEventListener('click', () => showSlide(i));
+  const dot = document.createElement("span");
+  dot.classList.add("dot");
+  if (i === 0) dot.classList.add("active");
+  dot.addEventListener("click", () => showSlide(i));
   dotsContainer.appendChild(dot);
 });
 
-const dots = document.querySelectorAll('.dot');
+const dots = document.querySelectorAll(".dot");
 
+// Function to show slides
 function showSlide(index) {
-  slides.forEach((s, i) => s.classList.toggle('active', i === index));
-  dots.forEach((d, i) => d.classList.toggle('active', i === index));
+  slides.forEach((s, i) => s.classList.toggle("active", i === index));
+  dots.forEach((d, i) => d.classList.toggle("active", i === index));
   currentIndex = index;
 }
 
+// Next / Previous buttons
 function nextSlide() {
   currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
@@ -33,7 +37,29 @@ function prevSlide() {
   showSlide(currentIndex);
 }
 
-setInterval(nextSlide, 2000);
+// Event Listeners for buttons
+nextBtn.addEventListener("click", () => {
+  nextSlide();
+  resetAutoSlide();
+});
+
+prevBtn.addEventListener("click", () => {
+  prevSlide();
+  resetAutoSlide();
+});
+
+// Auto slide every 5 seconds
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 5000);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+startAutoSlide();
+
 
 // ===== Hamburger Menu =====
 const hamburger = document.getElementById('hamburger');

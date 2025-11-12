@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SkyNova Web Solutions</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <img src="./skyNova image.png" alt="SkyNova Logo">
+        <img src="./Images/logo image.png" alt="SkyNova Logo">
       </div>
       <div class="hamburger" id="hamburger"></div>
       <ul class="nav-links" id="nav-links">
@@ -27,7 +27,7 @@
   <section class="carousel">
     <div class="slides">
       <div class="slide active">
-        <img src="https://www.mintmedia.in/wp-content/uploads/2022/04/How-to-Choose-Best-Web-Development-Services-in-Mumbai.jpg" alt="Web Development Services">
+        <img src="./Images/web image.png" alt="Web Development Services">
         <div class="overlay"></div>
         <div class="caption">
           <div class="caption-content">
@@ -38,7 +38,7 @@
       </div>
 
       <div class="slide">
-        <img src="https://prakashinfotech.com/wp-content/uploads/2024/06/mobile-app-development-img.jpg" alt="Mobile Application Development">
+        <img src="./Images/mobile image.png" alt="Mobile Application Development">
         <div class="overlay"></div>
         <div class="caption">
           <div class="caption-content">
@@ -49,18 +49,18 @@
       </div>
 
       <div class="slide">
-        <img src="https://www.webhopers.com/wp-content/uploads/2020/04/School-Management-Software-Development-Company-in-India.jpg" alt="School Management Software">
+        <img src="./Images/AI image.png" alt="AI Development">
         <div class="overlay"></div>
         <div class="caption">
           <div class="caption-content">
-            <h2>School Management Software</h2>
-            <p>Helping you stay ahead in a digital-first world.</p>
+            <h2>AI Development</h2>
+            <p>Building enterprise AI apps that boost business intelligence and speed</p>
           </div>
         </div>
       </div>
 
       <div class="slide">
-        <img src="https://www.silvertouch.com/wp-content/uploads/2020/08/cloud.jpg" alt="Cloud Solutions">
+        <img src="./Images/cloud image.webp" alt="Cloud Solutions">
         <div class="overlay"></div>
         <div class="caption">
           <div class="caption-content">
@@ -70,6 +70,12 @@
         </div>
       </div>
     </div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+
+    <!-- Dots -->
+    <div class="dots"></div>
+  </section>
   </section>
 
   <!-- Home Page Content -->
@@ -109,52 +115,95 @@
     </div>
   </div>
   </section>
- 
+  <!-- Counter Section -->
+<section class="counter-section">
+  <div class="counter-container">
+    <div class="counter-box">
+      <h3 class="counter" data-target="150">0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="counter-box">
+      <h3 class="counter" data-target="120">0</h3>
+      <p> Clients</p>
+    </div>
+    <div class="counter-box">
+      <h3 class="counter" data-target="50">0</h3>
+      <p>Skilled Professionals</p>
+    </div>
+    <div class="counter-box">
+      <h3 class="counter" data-target="10">0</h3>
+      <p>Years of Experience</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+   <section class="contact-cta">
+    <div class="contact-content">
+      <h2>Ready to Evalute Your Online Presence?</h2>
+      <p>Let’s build something amazing together! Contact our team today and take the first step toward your digital success.</p>
+      <a href="./contact.html" class="contact-btn">Contact Us</a>
+    </div>
+   </section>
+  <!-- Footer Section -->
 <footer class="footer">
   <div class="footer-container">
     
+    <!-- About Section -->
     <div class="footer-about">
       <h3>SkyNova Web Solutions</h3>
       <p>
-        Empowering your digital presence through creative design, seamless
-        development, and strategic marketing solutions.
+        Empowering your digital presence through innovative web development, AI-driven solutions, 
+        and strategic digital marketing.
       </p>
-    </div>
+    </div> 
 
-    
+    <!-- Quick Links -->
     <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./services.html">Our Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
 
-    
-    <div class="footer-social">
-      <h4>Follow Us</h4>
-      <div class="social-icons">
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</li>
+        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> info@skynovaweb.com</li>
+        <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM – 6:00 PM</li>
+      </ul>
+    </div>
+
+  <!-- Social Media -->
+  <div class="footer-social">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </div>
 
+  <!-- Footer Bottom -->
   <div class="footer-bottom">
     <p>© <span id="year"></span> SkyNova Web Solutions. All rights reserved.</p>
-  </div>
+    
 </footer>
 
-
+<!-- Font Awesome -->
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 />
 
+  
   <script src="./script.js"></script>
 </body>
 </html>

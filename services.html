@@ -3,47 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services | SkyNova Web Solutions</title>
-  <link rel="stylesheet" href="./style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Our Services - SkyNova Web Solutions</title>
+  <link rel="stylesheet" href="./service.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
-
-  <!-- ===== Navbar ===== -->
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <img src="./skyNova image.png" alt="SkyNova Logo">
+        <img src="./Images/logo image.png" alt="SkyNova Logo" />
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html" class="active">Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ===== Services Section ===== -->
+  <!-- Header -->
+  <header class="services-header">
+    <h1>Our Services</h1>
+    <p>Innovative digital solutions to elevate your business to the next level.</p>
+  </header>
+
+  <!-- Services Section -->
   <section class="services-section">
-    <div class="services-header">
-      <h2>Our <span>Services</span></h2>
-      <p>Explore our range of professional digital solutions crafted to elevate your business presence online.</p>
+    <!-- 15 Service Cards -->
+    <div class="service-card" data-modal="1">
+      <img src="./Images/design imagge.jpeg" alt="Web Design" />
+      <h3>Web Design</h3>
+      <p>Modern, user-friendly designs that make your brand shine online.</p>
+      <button class="learn-btn">Learn More</button>
     </div>
 
-    <div class="services-grid">
-      <!-- Service 1 -->
-      <div class="service-card">
-        <img src="https://www.mintmedia.in/wp-content/uploads/2022/04/How-to-Choose-Best-Web-Development-Services-in-Mumbai.jpg" alt="Web Development">
-        <div class="service-info">
-          <i class="fas fa-laptop-code icon"></i>
-          <h3>Web Development</h3>
-          <p>We design fast, responsive, and modern websites that help your brand stand out and engage visitors effectively.</p>
-        </div>
-      </div>
+    <div class="service-card" data-modal="2">
+      <img src="./Images/web image.png" alt="Web Development" />
+      <h3>Web Development</h3>
+      <p>Fast, secure, and scalable websites built using the latest tech.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="3">
+      <img src="./Images/app image.jpg" alt="App Development" />
+      <h3>App Development</h3>
+      <p>Build high-quality Android and iOS apps for your business.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="4">
+      <img src="./Images/seo image.jpg" alt="SEO Optimization" />
+      <h3>SEO Optimization</h3>
+      <p>Rank higher on Google and drive more traffic to your website.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="5">
+      <img src="./Images/digital image.png" alt="Digital Marketing" />
+      <h3>Digital Marketing</h3>
+      <p>Boost your visibility through data-driven digital marketing.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="6">
+      <img src="./Images/graphic image.jpg" alt="Graphic Design" />
+      <h3>Graphic Design</h3>
+      <p>Creative visuals that capture your audience’s attention.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="7">
+      <img src="./Images/e comm image.jpg" alt="E-commerce" />
+      <h3>E-commerce Solutions</h3>
+      <p>Build your online store with seamless and secure checkout.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="8">
+      <img src="./Images/cloud image.webp" alt="Cloud Services" />
+      <h3>Cloud Services</h3>
+      <p>Reliable and secure cloud hosting and migration solutions.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="9">
+      <img src="./Images/AI image.png" alt="AI Solutions" />
+      <h3>AI Solutions</h3>
+      <p>Integrate artificial intelligence to automate your business.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="10">
+      <img src="./Images/data image.jpeg" alt="Data Analytics" />
+      <h3>Data Analytics</h3>
+      <p>Convert raw data into actionable business insights.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="11">
+      <img src="./Images/Cybersecurity image.webp" alt="Cyber Security" />
+      <h3>Cyber Security</h3>
+      <p>Protect your business with top-notch cybersecurity services.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="service-card" data-modal="12">
+      <img src="./Images/content-writing-2.png" alt="Content Writing" />
+      <h3>Content Writing</h3>
+      <p>SEO-optimized content that engages and converts readers.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>    
   </section>
 
-  
-  <script src="./script.js"></script>
+  <!-- ===== POPUP MODALS ===== -->
+  <div id="serviceModals"></div>
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- About Section -->
+    <div class="footer-about">
+      <h3>SkyNova Web Solutions</h3>
+      <p>
+        Empowering your digital presence through innovative web development, AI-driven solutions, 
+        and strategic digital marketing.
+      </p>
+    </div> 
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./services.html">Our Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</li>
+        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+        <li><i class="fas fa-envelope"></i> info@skynovaweb.com</li>
+        <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM – 6:00 PM</li>
+      </ul>
+    </div>
+
+  <!-- Social Media -->
+  <div class="footer-social">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> SkyNova Web Solutions. All rights reserved.</p>
+    
+</footer>
+
+<!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <script src="./seri.js"></script>
 </body>
 </html>
+
